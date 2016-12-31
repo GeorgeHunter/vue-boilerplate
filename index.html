@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue Example</title>
+	<script src="https://unpkg.com/vue@2.1.6/dist/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+	<div v-for="complaint in complaints">
+		<h1>{{ complaint.name }}</h1>
+		<content v-html="complaint.description"></content>
+	</div>
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
+
